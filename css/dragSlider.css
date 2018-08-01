@@ -1,0 +1,24 @@
+.drag-slider{
+    overflow: hidden;
+    height: 100%;
+}
+
+.drag-slider-container{
+    font-size: 0%;
+    text-align: center;
+    height: 100%;
+}
+
+.drag-slider-container *{
+    font-size: initial;
+}
+
+.drag-slider__slide{
+    display: inline-grid;
+    height: 100%;
+}
+
+.on-sliding{
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}

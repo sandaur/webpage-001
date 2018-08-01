@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | Goblin's House</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/dragSlider.css">
+    <link rel="stylesheet" href="css/main.css"> <!-- Always the last to override -->
+
+    <link rel="stylesheet" type="text/css" href="css/font/flaticon.css">
+</head>
+<body>
+    <header>
+        <nav id="main-navbar">
+            <div id="logo">goblin's house</div>
+            <ul>
+                <li><a href="#" data-scrolltarget="main-slider" class="btn-shortcut">inicio</a></li>
+                <li><a href="#" data-scrolltarget="section-b" class="btn-shortcut">habitaciones</a></li>
+                <li><a href="#" data-scrolltarget="section-e" class="btn-shortcut">panoramas</a></li>
+                <li><a href="#" id="go-footer">contacto</a></li>
+                <li class="book-btn"><a href="">reservar</a></li>
+            </ul>
+        </nav>
+        <div id="main-slider" class="slider">
+            <div class="parallax-container--front slider__slide"> <!-- Aqui el contenido es estatico (no parallax) -->
+                <div class="parallax-frame-container"> <!-- Desde aqui se mueve el fondo -->
+                    <div class="parallax-frame">
+                        <img src="images/background.jpg" alt="bg1" class="parallax-bg">
+                    </div>
+                </div>
+                <div class="content-overbg">
+                    <div class="front-bigtext slide-hide" style="grid-column: 2;">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint dolor iure, sed placeat hic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container--front slider__slide"> <!-- Aqui el contenido es estatico (no parallax) -->
+                <div class="parallax-frame-container"> <!-- Desde aqui se mueve el fondo -->
+                    <div class="parallax-frame">
+                        <img src="images/bg3.jpg" alt="bg2" class="parallax-bg">
+                    </div>
+                </div>
+                <div class="content-overbg">
+                    <div class="front-bigtext slide-hide" style="grid-column: 2;">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint dolor iure, sed placeat hic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="parallax-container--front slider__slide"> <!-- Aqui el contenido es estatico (no parallax) -->
+                <div class="parallax-frame-container"> <!-- Desde aqui se mueve el fondo -->
+                    <div class="parallax-frame">
+                        <img src="images/bg4.jpg" alt="bg4" class="parallax-bg">
+                    </div>
+                </div>
+                <div class="content-overbg">
+                    <div class="front-bigtext slide-hide" style="grid-column: 2;">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum sint dolor iure, sed placeat hic</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="section-title">
+        <span class="horizontal-parallax" data-parallax-rate="0.01">Goblin'sHouse</span>
+        <div class="shadow-top"></div>
+        <span class="scroll-hide">Goblin's House</span>
+    </div>
+
+    <div id="section-a"> <!-- seccion de features -->
+        <div class="big-text">
+            <h1>Estilo, calidad y cercanía en el mejor sector de Temuco</h1>
+        </div>
+        <div class="deck">
+            <div class="deck__card scroll-hide">
+                <span class="flaticon-suitcase"></span>
+                <h2>Conveniente</h2>
+                <p>Ideal para el viajero que desea un reparador descanso en un bello entorno cercano a los principales atractivos de la ciudad.</p>
+            </div>
+            <div class="deck__card scroll-hide">
+                <span class="flaticon-room-1"></span>
+                <h2>Acogedor</h2>
+                <p>En Hotel Boutique Goblin encontrará hotelería de primer nivel con un ambiente íntimo y privado, que se adapta a sus necesidades, brindando una experiencia de alojamiento personalizada y a su medida, en un clima que lo hará sentir como en su hogar.</p>
+            </div>
+            <div class="deck__card scroll-hide">
+                <span class="flaticon-map"></span>
+                <h2>Bien Ubicado</h2>
+                <p>Ubicado en el barrio más interesante de Temuco, Hotel Boutique Goblin es un pequeño y acogedor hotel que cuenta con siete habitaciones.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <span class="horizontal-parallax" data-parallax-rate="0.01">habitaciones</span>
+        <div class="shadow-top"></div>
+        <span class="scroll-hide title-rigth">habitaciones</span>
+    </div>
+
+    <div id="section-b"> <!-- seccion de habitaicones -->
+        <div class="diptych">
+            <div id="diptych-card1" class="diptych__card">
+                <div class="diptych__card__info">
+                    <h2>Habitacion Single</h2>
+                    <p>Una habitacion confortable equipada con television por cable, internet inalambrico y una cama queen size.</p>
+                    <div class="card__info__services">
+                        <span class="flaticon-television-screen">television</span>
+                        <span class="flaticon-wifi-access">wifi</span>
+                        <span class="flaticon-soup-spoon-and-fork">desayuno</span>
+                        <span class="flaticon-vintage-bathtube">baño privado</span>
+                        <span class="flaticon-home-telephone">servicio</span>
+                    </div>
+                </div>
+                <div class="title-container">
+                    <span class="diptych__sign">
+                        <span class="text">Single</span>
+                        <span class="icon flaticon-double-king-size-bed"></span>
+                    </span>
+                </div>
+                <div class="card_bg">
+                    <div id="drag-slider-2"  class="drag-slider">
+                        <div class="drag-slider-container">
+                            <div class="drag-slider__slide">
+                                <div class="center-img">
+                                    <img src="images/bed1.jpg" alt="bed2">
+                                </div>
+                            </div>
+                            <div class="drag-slider__slide">
+                                <div class="center-img">
+                                    <img src="images/bed2.jpg" alt="bed2">
+                                </div>
+                            </div>
+                            <div class="drag-slider__slide">
+                                <div class="center-img">
+                                    <img src="images/bg3.jpg" alt="bed2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="diptych-card2" class="diptych__card--right">
+                <div class="diptych__card__info">
+                    <h2>Habitacion Double</h2>
+                    <p>Una habitacion confortable equipada con television por cable, internet inalambrico y dos cama twin size.</p>
+                    <div class="card__info__services">
+                        <span class="flaticon-television-screen">television</span>
+                        <span class="flaticon-wifi-access">wifi</span>
+                        <span class="flaticon-soup-spoon-and-fork">desayuno</span>
+                        <span class="flaticon-vintage-bathtube">baño privado</span>
+                        <span class="flaticon-home-telephone">servicio</span>
+                    </div>
+                </div>
+                <div class="title-container">
+                    <span class="diptych__sign">
+                        <span class="text">Double</span>
+                        <span class="icon flaticon-single-hotel-bed"></span>
+                    </span>
+                </div>
+                <div class="card_bg">
+                    <div id="drag-slider-3"  class="drag-slider">
+                        <div class="drag-slider-container">
+                            <div class="drag-slider__slide">
+                                <div class="center-img">
+                                    <img src="images/bed2.jpg" alt="bed2">
+                                </div>
+                            </div>
+                            <div class="drag-slider__slide">
+                                <div class="center-img">
+                                    <img src="images/bed1.jpg" alt="bed2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <span class="horizontal-parallax" data-parallax-rate="0.01">Tarifas</span>
+        <div class="shadow-top"></div>
+        <span class="scroll-hide">Tarifas</span>
+    </div>
+    
+    <div id="section-c"> <!-- seccion de quotes -->
+        <div class="big-text" style="grid-row: 1; grid-column: 1">
+            <h1>¿Que opinan de nosotros?</h1>
+        </div>
+        <div id="drag-slider-1" class="drag-slider">
+            <div class="drag-slider-container">
+                <div class="quoted-reference drag-slider__slide scroll-hide">
+                    <div class="big-phrase">
+                        <span class="flaticon-quotation-mark"></span>
+                        Este hotel ostenta el mismo confort de uno grande
+                        <span class="author">&#8212; Jorge Olivares</span>
+                    </div>
+                    <div class="vertical-separator"></div>
+                    <div class="side-paragraph">
+                        Este Hotel de Temuco, ubicado en el pasaje Pirineos, en el corazón de la avenida Alemania, se vislumbra como una de las opciones más vanguardistas del rubro, al tener una arquitectura pequeña y acogedora, pero el servicio y las comodidades de un gran hotel con características propias de los hoteles boutiques.
+                    </div>
+                </div>
+                <div class="quoted-reference drag-slider__slide scroll-hide">
+                    <div class="big-phrase">
+                        <span class="flaticon-quotation-mark"></span>
+                        Este hotel ostenta el mismo confort de uno grande
+                        <span class="author">&#8212; Jorge Olivares</span>
+                    </div>
+                    <div class="vertical-separator"></div>
+                    <div class="side-paragraph">
+                        Este Hotel de Temuco, ubicado en el pasaje Pirineos, en el corazón de la avenida Alemania, se vislumbra como una de las opciones más vanguardistas del rubro, al tener una arquitectura pequeña y acogedora, pero el servicio y las comodidades de un gran hotel con características propias de los hoteles boutiques.
+                    </div>
+                </div>
+                <div class="quoted-reference drag-slider__slide scroll-hide">
+                    <div class="big-phrase">
+                        <span class="flaticon-quotation-mark"></span>
+                        Este hotel ostenta el mismo confort de uno grande
+                        <span class="author">&#8212; Jorge Olivares</span>
+                    </div>
+                    <div class="vertical-separator"></div>
+                    <div class="side-paragraph">
+                        Este Hotel de Temuco, ubicado en el pasaje Pirineos, en el corazón de la avenida Alemania, se vislumbra como una de las opciones más vanguardistas del rubro, al tener una arquitectura pequeña y acogedora, pero el servicio y las comodidades de un gran hotel con características propias de los hoteles boutiques.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="parallax-container" style="height: 30vh">
+            <div class="parallax-frame-container">
+                <div class="parallax-frame">
+                    <img src="images/img-22.jpg" alt="bg2" class="parallax-bg">
+                </div>
+            </div>
+            <div class="btc">
+                <h2>Panoramas</h2>
+            </div>
+        </div>
+    
+    <div id="section-e"> <!-- seccion de panoramas -->
+        <div class="panorama-tile" style="background-image: url(images/places/place-1.jpg)">
+            <h1>casino dreams</h1>
+            <div class="panorama-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad ab tempora minus! Animi sit adipisci asperiores aperiam soluta natus.</div>
+        </div>
+        <div class="panorama-tile" style="background-image: url(images/places/place-2.jpg)">
+            <h1>portal temuco</h1>
+            <div class="panorama-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad ab tempora minus! Animi sit adipisci asperiores aperiam soluta natus.</div>
+        </div>
+        <div class="panorama-tile" style="background-image: url(images/places/place-3.jpg)">
+            <h1>banco estado</h1>
+            <div class="panorama-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad ab tempora minus! Animi sit adipisci asperiores aperiam soluta natus.</div>
+        </div>
+        <div class="panorama-tile" style="background-image: url(images/places/place-4.jpg)">
+            <h1>mall mirage</h1>
+            <div class="panorama-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad ab tempora minus! Animi sit adipisci asperiores aperiam soluta natus.</div>
+        </div>
+        <div class="panorama-tile" style="background-image: url(images/places/place-5.jpg)">
+            <h1>estadio german beker</h1>
+            <div class="panorama-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ad ab tempora minus! Animi sit adipisci asperiores aperiam soluta natus.</div>
+        </div>
+    </div>
+    
+    <div class="section-title">
+        <span class="horizontal-parallax" data-parallax-rate="0.01">Ubicacion</span>
+        <div class="shadow-top"></div>
+        <span class="scroll-hide title-rigth">Ubicacion</span>
+    </div>
+    
+    <div id="section-d">  <!-- seccion de mapa -->
+        <div id="map"></div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-container__main">
+            <div class="info-web">
+                <h2>Hotel Goblin's House</h2>
+                <ul>
+                    <li class="flaticon-right-arrow btn-shortcut" data-scrolltarget="main-slider"><a href="">Inicio</a></li>
+                    <li class="flaticon-right-arrow btn-shortcut" data-scrolltarget="section-b"><a href="">Habitaciones</a></li>
+                    <li class="flaticon-right-arrow btn-shortcut" data-scrolltarget=""><a href="">Tarifas</a></li>
+                    <li class="flaticon-right-arrow btn-shortcut" data-scrolltarget="section-e"><a href="">Panoramas</a></li>
+                    <li class="flaticon-right-arrow btn-shortcut" data-scrolltarget="section-d"><a href="">Ubicacion</a></li>
+                </ul>
+            </div>
+            <div class="info-web">
+                <h2>Detalles de Contacto</h2>
+                <ul>
+                    <li class="flaticon-right-arrow"><a href="">Pirineos 0841, Temuco - Chile</a></li>
+                    <li class="flaticon-right-arrow"><a href="">+56 (45) 232 0044</a></li>
+                    <li class="flaticon-right-arrow"><a href="">contacto@hotelgoblin.cl</a></li>
+                </ul>
+            </div>
+            <form action="#" class="contact-form">
+                <h2>Contacta con Nosotros</h2>
+                <p>Porfavor llena el formulario y estaremos en contacto contigo a la brevedad.</p>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Correo">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>Enviar</button>
+            </form>
+        </div>
+        <div class="footer-container__lower">
+            <div class="item">
+                <a href="">Politica de Privacidad</a> | <a href="">Impressum</a> | <a href="">Terminos &#38; Condiciones</a>
+            </div>
+            <div class="item--right">
+                © Design Hotels™ 2018
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScirpting -->
+
+    <script src="js/utility.js"></script>
+    <script src="js/simpleSlider.js"></script>
+    <script src="js/dragSlider.js"></script>
+    <script src="js/gmaps.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzwl73Pu0DkeSWilGHWnrKZ6AuVmyAVOY&callback=initMap"
+        async defer>
+    </script>
+</body>
+</html>
